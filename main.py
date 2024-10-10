@@ -2,7 +2,9 @@ from aiogram import Bot, Dispatcher, types
 from aiogram.filters import Command
 from utils import calculate_plane2
 
-bot = Bot(token="7943497241:AAHTBYf9pQgo7nCLpcYj2LehSUjeTTaC7d8")
+from dotenv import env
+
+bot = Bot(token=env("TELEGRAM"))
 dp = Dispatcher()
 
 
